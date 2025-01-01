@@ -42,19 +42,33 @@ a:hover {
   text-decoration: underline;
 }
 
-header.main-header {
+header {
   display: flex;
-  align-items: center; /* Vertically center the logo */
-  justify-content: flex-start; /* Align logo to the left */
-  position: fixed; /* Fix at the top of the screen */
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; /* Full width of the screen */
-  padding: 5px 20px; /* Further reduced padding for a shorter header */
-  background-color: #0e221d; /* Background color updated */
-  z-index: 100; /* Ensure it stays on top of other content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #0e221d;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/*
+header {
+  display: flex;
+  align-items: center; /* Vertically center the logo 
+  justify-content: flex-start; /* Align logo to the left 
+  position: fixed; /* Fix at the top of the screen 
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the screen 
+padding: 5px 20px; /* Further reduced padding for a shorter header 
+  background-color: #0e221d; /* Background color updated 
+  z-index: 100; /* Ensure it stays on top of other content 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow 
+}*/
 
 header .logo-container {
   display: flex;
@@ -95,18 +109,17 @@ header .logo {
     width: 100px; /* Adjust size for smaller screens */
   }
 
-  nav ul {
+  /* nav ul {
     flex-direction: column;
     align-items: center;
   }
 
-  nav ul li {
+  /*nav ul li {
     margin: 10px 0;
   }
 
   nav ul li a {
     font-size: 22px; /* Larger font size for mobile screens */
-  }
 }
 
 main {
@@ -179,17 +192,12 @@ footer a {
 
 .nav-links a {
   text-decoration: none;
-  color: #000;
+  color: white;
   font-weight: bold;
 }
 
-/* Styling for the header */
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #f8f9fa;
+.nav-links a:hover {
+  color: #4caf50;
 }
 
 /* Project styling */
@@ -201,15 +209,16 @@ footer a {
   text-decoration: underline;
 }
 
-.image-row img {
+.image-row img,
+.logo-container {
   /* width: 150px;
   height: auto;*/
   border-radius: 5px;
   justify-content: center;
   margin-top: 20px;
-  width: 100%; /*Images fill the container equally*/
-  height: auto;
-  max-width: 200px; /*Ensure images have a max width*/
+  width: auto; /*Images fill the container equally*/
+  height: 100px;
+  max-width: 400px; /*Ensure images have a max width*/
 }
 
 .row-pics {
@@ -219,38 +228,6 @@ footer a {
   margin: 0; /* Remove default margins */
   padding: 0; /* Remove any padding */
 }
-
-/* Style for the navigation bar */
-.nav-links {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-.nav-links a:hover {
-  color: #4caf50;
-}
-
-/* Styling for the header */
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #f8f9fa;
-}
-
 /*.logo-container img {
   width: 100px;
 }*/
@@ -271,8 +248,10 @@ footer a {
 
 .hero-image {
   width: 100%; /* Makes the image take up the full width */
-  height: auto; /* Maintains the aspect ratio */
+  height: 70vh; /* Adjust the height to control how much is displayed */
   display: block; /* Removes any inline spacing */
+  object-fit: cover; /* Ensures the image fills the container while preserving its aspect ratio */
+  object-position: center center; /* Centers the image in the container */
 }
 
 html {
@@ -363,7 +342,7 @@ html {
   margin: 0;
 }
 
-/* Awards and Press Section */
+/* Awards Section */
 #awards-press {
   padding: 50px 20px;
   background-color: #f9f9f9;
@@ -385,7 +364,6 @@ html {
 }
 
 .award {
-  display: block;
   width: 150px;
   height: 150px;
   border-radius: 10px;
@@ -398,10 +376,19 @@ html {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .award:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.award p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 1.5rem; /* Adjust the value to control spacing */
 }
