@@ -12,7 +12,6 @@
     />
     <title>Rachel Sadeh | UX/UI Designer</title>
     <link rel="icon" href="icons/favicon-32x32.png" />
-    <!-- Logo Image for favicon not working -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -46,31 +45,34 @@
           </li>
         </ul>
       </nav>
+      <span class="menu-icon" onclick="toggleMenu()">☰</span>
     </header>
 
     <main>
       <img src="images/hero.jpg" alt="Hero Image" class="hero-image" />
       <!-- Section for the image row -->
+      <h3>Hello! My name is</h3>
+      <h1>Rachel Sadeh</h1>
       <section class="image-row">
         <a href="https://hcii.cmu.edu/" target="_blank"
           ><img src="images/HCII.png" alt="HCII Logo"
         /></a>
+        <a href="https://www.veytel.com/" target="_blank"
+          ><img src="images/VeyTel2.png" alt="VeyTel Inc. Logo"
+        /></a>
+        <a href="https://www.uhhospitals.org/" target="_blank"
+        ><img
+          src="images/University Hospitals.jpg"
+          alt="University Hospitals Logo"
+      /></a>
+        <a href="https://axle-lab.com/" target="_blank"
+        ><img src="images/AXLE.png" alt="Axle Lab Logo"
+      /></a>
         <a href="https://www.proofpoint.com/us" target="_blank"
           ><img src="images/Proofpoint.png" alt="Proofpoint Logo"
         /></a>
         <a href="https://canine.org/" target="_blank"
           ><img src="images/Canine Companions.png" alt="Canine Companions Logo"
-        /></a>
-        <a href="https://www.veytel.com/" target="_blank"
-          ><img src="images/VeyTel2.png" alt="VeyTel Inc. Logo"
-        /></a>
-        <a href="https://axle-lab.com/" target="_blank"
-          ><img src="images/AXLE.png" alt="Axle Lab Logo"
-        /></a>
-        <a href="https://www.uhhospitals.org/" target="_blank"
-          ><img
-            src="images/University Hospitals.jpg"
-            alt="University Hospitals Logo"
         /></a>
         <a
           href="https://www.gianteagle.com/?gad_source=1&gclid=CjwKCAiApsm7BhBZEiwAvIu2X0SPHeIO6_Wao26Yorul9kVMFdvAdy1rO9sE94tkNwhCWl-P5rKDihoCr4kQAvD_BwE&gclsrc=aw.ds"
@@ -78,6 +80,7 @@
           ><img src="images/Giant Eagle.png" alt="Giant Eagle Logo"
         /></a>
       </section>
+
       <section id="portfolio">
         <h2>My Work</h2>
         <div class="project">
@@ -160,26 +163,25 @@
               </div>
             </div>
           </div>
-          <!-- <div class="testimonial">
+         <div class="testimonial">
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore"
+              "As a former hiring manager, one of the most important skills for early career professionals is to proactively seek feedback and take immediate practical steps towards improvement. I witnessed Rachel embody this behavior over and over again during, and after, her completion of the MHCI program. Through course projects, internships, and contract work, Rachel continues to seek the experience needed to be successful as a researcher and designer."
             </p>
             <div class="testimonial-info">
-              <img src="images/logo.png" alt="Ellen Hughes" />
+              <img src="images/Raelin.png" alt="Raelin Sawka Musuraca" />
               <div class="person-details">
-                <strong>Ellen Hughes</strong>
-                <p>VeyTel CEO & Technical Director</p>
+                <strong>Raelin Sawka Musuraca</strong>
+                <p>Director, Master in Human-Computer Interaction</p>
               </div>
             </div>
-          </div>
+          </div> <!-- 
           <div class="testimonial">
             <p>
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore"
             </p>
             <div class="testimonial-info">
-              <img src="images/logo.png" alt="Dr. Bryan Carroll" />
+              <img src="images/logo.png" alt="Ellen Hughes" />
               <div class="person-details">
                 <strong>Dr. Bryan Carroll</strong>
                 <p>
@@ -193,7 +195,7 @@
       </section>
 
       <section id="awards-press">
-        <h2>Awards and Press</h2>
+        <h1 style="text-align: center">Awards and Press</h1>
         <div class="awards-container">
           <a
             href="https://www.youtube.com/watch?v=1HewGE9Zbzk"
@@ -253,5 +255,6 @@
         >
       </p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
